@@ -1,63 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        div{
-display: flex;
-flex-direction: column;
-gap:20px;
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .video-container video {
+        border-radius: 10px;
+      }
+
+      @media screen and (min-width: 768px) {
+        .video-container {
+          display: grid;
+          grid-template: repeat(6, 200px) / repeat(2, 300px);
+          justify-content: center;
+          align-items: stretch;
+          justify-items: stretch;
+          gap: 10px;
+        }
+      }
+
+      @media screen and (min-width: 1024px) {
+        .video-container {
+          display: grid;
+          grid-template: repeat(6, 200px) / repeat(3, 300px);
         }
 
-        .video-container video{
-            border-radius: 10px;
+        .video-container video:nth-child(2) {
+          grid-column: 2 / span 2;
+          grid-row: 1 / span 2;
         }
-     
-
-        @media screen and (min-width:768px) {
-            .video-container{
-               display:grid;
-               grid-template: repeat(6,200px) / repeat(2,300px);
-               justify-content: center;
-               align-items: stretch;
-               justify-items:stretch ;
-               gap:10px;
-            }
-
-        }
-
-        @media screen and (min-width:1024px) {
-            .video-container{
-                display:grid;
-                grid-template: repeat(6,200px) / repeat(3,300px);
-
-            }
-
-            
-        }
+      }
     </style>
-</head>
-<body>
-<div class="container">
-    <h1>Video Gallery</h1>
-    <div class="video-container">
-        <video src="videos/A tight hug 🥺🫂💗 #shorts [q3Nj9ZMSw4I].mp4" controls autoplay loop ></video>
-        <video src="videos/A tight hug 🥺🫂💗 #shorts [q3Nj9ZMSw4I].mp4" controls autoplay loop ></video>
-        <video src="videos/A tight hug 🥺🫂💗 #shorts [q3Nj9ZMSw4I].mp4" controls autoplay loop ></video>
-        <video src="videos/A tight hug 🥺🫂💗 #shorts [q3Nj9ZMSw4I].mp4" controls autoplay loop ></video>
-        <video src="videos/A tight hug 🥺🫂💗 #shorts [q3Nj9ZMSw4I].mp4" controls autoplay loop ></video>
-        <video src="videos/A tight hug 🥺🫂💗 #shorts [q3Nj9ZMSw4I].mp4" controls autoplay loop ></video>
-        <video src="videos/A tight hug 🥺🫂💗 #shorts [q3Nj9ZMSw4I].mp4" controls autoplay loop ></video>
-        <video src="videos/A tight hug 🥺🫂💗 #shorts [q3Nj9ZMSw4I].mp4" controls autoplay loop ></video>
-        <video src="videos/A tight hug 🥺🫂💗 #shorts [q3Nj9ZMSw4I].mp4" controls autoplay loop ></video>
-        <video src="videos/A tight hug 🥺🫂💗 #shorts [q3Nj9ZMSw4I].mp4" controls autoplay loop ></video>
-        <video src="videos/A tight hug 🥺🫂💗 #shorts [q3Nj9ZMSw4I].mp4" controls autoplay loop ></video>
-        <video src="videos/A tight hug 🥺🫂💗 #shorts [q3Nj9ZMSw4I].mp4" controls autoplay loop ></video>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Video Gallery</h1>
+      <div class="video-container">
+        <video
+          src="videos/A tight hug 🥺🫂💗 #shorts [q3Nj9ZMSw4I].mp4"
+          controls
+          autoplay
+          loop
+        ></video>
+        <video
+          class="sec"
+          src="videos/A tight hug 🥺🫂💗 #shorts [q3Nj9ZMSw4I].mp4"
+          controls
+          autoplay
+          loop
+        ></video>
+        <video
+          src="videos/A tight hug 🥺🫂💗 #shorts [q3Nj9ZMSw4I].mp4"
+          controls
+          autoplay
+          loop
+        ></video>
+        <video
+          src="videos/A tight hug 🥺🫂💗 #shorts [q3Nj9ZMSw4I].mp4"
+          controls
+          autoplay
+          loop
+        ></video>
+        <video
+          src="videos/A tight hug 🥺🫂💗 #shorts [q3Nj9ZMSw4I].mp4"
+          controls
+          autoplay
+          loop
+        ></video>
+        <video
+          src="videos/A tight hug 🥺🫂💗 #shorts [q3Nj9ZMSw4I].mp4"
+          controls
+          autoplay
+          loop
+        ></video>
+        <video
+          src="videos/A tight hug 🥺🫂💗 #shorts [q3Nj9ZMSw4I].mp4"
+          controls
+          autoplay
+          loop
+        ></video>
+        <video
+          src="videos/A tight hug 🥺🫂💗 #shorts [q3Nj9ZMSw4I].mp4"
+          controls
+          autoplay
+          loop
+        ></video>
+        <video
+          src="videos/A tight hug 🥺🫂💗 #shorts [q3Nj9ZMSw4I].mp4"
+          controls
+          autoplay
+          loop
+        ></video>
+      </div>
     </div>
-
-
-</div>
-</body>
+  </body>
 </html>
